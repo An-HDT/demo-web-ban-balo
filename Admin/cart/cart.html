@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img.jpg" />
+    <script src="https://kit.fontawesome.com/10c30652a2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cart-list.css">
+    <title>Your Cart List</title>
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="header__cart">
+                <a href="#" class="header__cart-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path>
+                  </svg>
+                    <div class="header__count-products">7</div>
+                </a>
+                <div class="header__view-cart">
+                    <ul class="header__cart-list">
+
+                        <li class="header__cart-item" data-id="2" data-size="xs">
+                            <div class="header__cart-image">
+                                <img src="img.jpg" alt="" class="header__cart-img">
+                            </div>
+                            <div class="header__cart-info">
+                                <h1 class="header__cart-title">Hoodie 2</h1>
+                                <div class="header__cart-size">Size: <span>xs</span></div>
+                                <div class="header__cart-price">
+                                    $10
+                                </div>
+                                <div class="header__cart-quantity" data-id="2" data-size="xs">
+                                    <div class="header__cart-btn minus">-</div>
+                                    <div class="header__cart-number">2</div>
+                                    <div class="header__cart-btn plus">+</div>
+                                </div>
+                            </div>
+                            <span class="header__cart-btn-delete" data-id="2">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                        </li>
+                        <li class="header__cart-item" data-id="3" data-size="xs">
+                            <div class="header__cart-image">
+                                <img src="img.jpg" alt="" class="header__cart-img">
+                            </div>
+                            <div class="header__cart-info">
+                                <h1 class="header__cart-title">Jacket 1</h1>
+                                <div class="header__cart-size">Size: <span>xs</span></div>
+                                <div class="header__cart-price">
+                                    $10
+                                </div>
+                                <div class="header__cart-quantity" data-id="3" data-size="xs">
+                                    <div class="header__cart-btn minus">-</div>
+                                    <div class="header__cart-number">1</div>
+                                    <div class="header__cart-btn plus">+</div>
+                                </div>
+                            </div>
+                            <span class="header__cart-btn-delete" data-id="3">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                        </li>
+                        <li class="header__cart-item" data-id="3" data-size="xs">
+                            <div class="header__cart-image">
+                                <img src="img.jpg" alt="" class="header__cart-img">
+                            </div>
+                            <div class="header__cart-info">
+                                <h1 class="header__cart-title">Jacket 1</h1>
+                                <div class="header__cart-size">Size: <span>xs</span></div>
+                                <div class="header__cart-price">
+                                    $10
+                                </div>
+                                <div class="header__cart-quantity" data-id="3" data-size="xs">
+                                    <div class="header__cart-btn minus">-</div>
+                                    <div class="header__cart-number">1</div>
+                                    <div class="header__cart-btn plus">+</div>
+                                </div>
+                            </div>
+                            <span class="header__cart-btn-delete" data-id="3">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                        </li>
+                    </ul>
+                    <div class="header__total-cart">
+                        <span>Cart Subtotal : </span>
+                        <span>$90.00</span>
+                    </div>
+                    <a href="#" class="btn btn--cart">View more and buy</a>
+                </div>
+            </div>
+        </header>
+        <h1 class="cart-list__title">Your shopping cart</h1>
+        <section class="cart-list">
+            <table class="cart-list__table">
+                <thead>
+                    <tr class="cart-list__heading">
+                        <th>image</th>
+                        <th>product name</th>
+                        <th>size</th>
+                        <th>unit price</th>
+                        <th>Quantity</th>
+                        <th>total</th>
+                        <th>edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr class="cart-list__row">
+                        <td class="cart-list__image">
+                            <img src="img.jpg" alt="" class="cart-list__img">
+                        </td>
+                        <td class="cart-list__product-name">Hoodie 2</td>
+                        <td class="cart-list__product-size">xs</td>
+                        <td class="cart-list__unit-price">
+                            <span>$10</span>
+                        </td>
+                        <td>
+                            <div class="cart-list__quantity" data-id="2" data-size="xs">
+                                <span class="cart-list__btn-quantity minus">-</span>
+                                <input type="number" min="1" value="1" class="cart-list__input-quantity" fdprocessedid="0gyrkm">
+                                <span class="cart-list__btn-quantity plus">+</span>
+                            </div>
+                        </td>
+                        <td class="cart-list__unit-price">
+                            <span>$10</span>
+                        </td>
+                        <td class="cart-list__delete-icon">
+                            <span data-id="2" data-size="xs">
+                                <i class="fa-solid fa-trash"></i>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="cart-list__row">
+                        <td class="cart-list__image">
+                            <img src="img.jpg" alt="" class="cart-list__img">
+                        </td>
+                        <td class="cart-list__product-name">Hoodie 2</td>
+                        <td class="cart-list__product-size">xs</td>
+                        <td class="cart-list__unit-price">
+                            <span>$10</span>
+                        </td>
+                        <td>
+                            <div class="cart-list__quantity" data-id="2" data-size="xs">
+                                <span class="cart-list__btn-quantity minus">-</span>
+                                <input type="number" min="1" value="1" class="cart-list__input-quantity" fdprocessedid="0gyrkm">
+                                <span class="cart-list__btn-quantity plus">+</span>
+                            </div>
+                        </td>
+                        <td class="cart-list__unit-price">
+                            <span>$10</span>
+                        </td>
+                        <td class="cart-list__delete-icon">
+                            <span data-id="2" data-size="xs">
+                                <i class="fa-solid fa-trash"></i>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="cart-list__row">
+                        <td class="cart-list__image">
+                            <img src="img.jpg" alt="" class="cart-list__img">
+                        </td>
+                        <td class="cart-list__product-name">Hoodie 2</td>
+                        <td class="cart-list__product-size">xs</td>
+                        <td class="cart-list__unit-price">
+                            <span>$10</span>
+                        </td>
+                        <td>
+                            <div class="cart-list__quantity" data-id="2" data-size="xs">
+                                <span class="cart-list__btn-quantity minus">-</span>
+                                <input type="number" min="1" value="1" class="cart-list__input-quantity" fdprocessedid="0gyrkm">
+                                <span class="cart-list__btn-quantity plus">+</span>
+                            </div>
+                        </td>
+                        <td class="cart-list__unit-price">
+                            <span>$10</span>
+                        </td>
+                        <td class="cart-list__delete-icon">
+                            <span data-id="2" data-size="xs">
+                                <i class="fa-solid fa-trash"></i>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="cart-list__row">
+                        <td class="cart-list__image">
+                            <img src="img.jpg" alt="" class="cart-list__img">
+                        </td>
+                        <td class="cart-list__product-name">Hoodie 2</td>
+                        <td class="cart-list__product-size">xs</td>
+                        <td class="cart-list__unit-price">
+                            <span>$10</span>
+                        </td>
+                        <td>
+                            <div class="cart-list__quantity" data-id="2" data-size="xs">
+                                <span class="cart-list__btn-quantity minus">-</span>
+                                <input type="number" min="1" value="1" class="cart-list__input-quantity" fdprocessedid="0gyrkm">
+                                <span class="cart-list__btn-quantity plus">+</span>
+                            </div>
+                        </td>
+                        <td class="cart-list__unit-price">
+                            <span>$10</span>
+                        </td>
+                        <td class="cart-list__delete-icon">
+                            <span data-id="2" data-size="xs">
+                                <i class="fa-solid fa-trash"></i>
+                            </span>
+                        </td>
+                    </tr>
+
+
+
+
+                </tbody>
+            </table>
+        </section>
+        <div class="cart-list__payment">
+            <div class="cart-list__btn-payment">
+                <a href="#" class="btn btn--payment">Continue Shopping</a>
+                <div class="btn btn--payment clear">Clear cart</div>
+            </div>
+            <div class="cart-list__buy">
+                <div>
+                    <span class="cart-list__total">Total: </span>
+                    <span class="cart-list__total-price">0</span>
+                </div>
+                <button class="btn btn--payment buy">procced to Checkout</button>
+            </div>
+        </div>
+        <footer class="footer">
+            <p class="footer__copyright">Copyright © 2022 HasThemes | Built with Beshop by HasThemes.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
